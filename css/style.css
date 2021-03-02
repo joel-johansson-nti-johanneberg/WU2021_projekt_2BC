@@ -1,0 +1,144 @@
+.startsida{
+width: 100vw;
+max-width: 100%;
+overflow-x: hidden;
+display: grid;
+grid-template-areas: 
+"hd hd hd"
+"sc sc sc"
+"sc sc sc"
+"sc sc sc"
+"sc sc sc"
+"sc sc sc"
+"sc sc sc"
+"ar ar ar"
+"ar ar ar"
+"ar ar ar"
+"ar ar ar"
+"ar ar ar"
+"ar ar ar"
+"ft ft ft"
+;
+
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: 50px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+;
+
+}
+.menyrad {
+    grid-area: hd;
+    background-color:none;
+    display: grid;
+    grid-template-areas: 
+    "h1 h2 h3";
+    grid-template-columns: repeat(1fr,3);
+    
+}
+.namn{
+    grid-area: h1;
+    font-size: 40px;
+    color: steelblue;
+    font-weight: 900;
+}
+.tomruta{
+    grid-area: h2;
+}
+.menyrutor{
+    grid-area: h3;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    padding-top: 6px;
+}
+.inforutan{
+    grid-area: sc;
+    background-image: url(/img/bakground1.jpg);
+    background-repeat: no-repeat;
+    height: auto;
+    background-attachment:fixed;
+    background-position: right bottom -80px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: top;
+}
+.kontakta{
+    border: 10px;
+    font-size: 20px;
+    margin-left: 20px;
+    padding: 10px;
+    border: lightcyan inset 4px;
+    color: lightcyan;
+    margin-right: 1100px;
+}
+.citat{
+    border: 10px;
+    margin-top: 150px;
+    padding: 10px;
+    font-size: 50px;
+    font-family: Georgia;
+    font-weight: 500;
+    color: lightcyan;;
+    margin-right: 800px;
+}
+.vägledare{
+    grid-area: ar;
+    display: grid;
+    grid-template-areas: 
+    "d1 d2 d3"
+    "d4 d5 d6";
+    grid-template-columns: repeat(1fr,3);
+    grid-template-rows: repeat(1fr,2);
+}
+.vägledarinfo{
+    grid-area: d1;
+    margin: 8px;
+    max-height: 100%;
+    max-width: 100%;
+    padding-right: none;
+    overflow-x: hidden;
+    background-color: none;
+    font-size: 40px;
+    font-family: Georgia;
+    font-weight: 500;
+    color: rgb(221, 211, 231);;
+}
+.vägledarna1{
+    grid-area: d2;
+    margin:8px;
+    background-color: rgb(221, 211, 231);
+    border: lightcyan inset 7px;
+}
+.vägledarna2{
+    grid-area: d3;
+    margin: 8px;
+    background-color: rgb(221, 211, 231);
+    border: lightcyan inset 4px;
+}
+.vägledarna3{
+    grid-area: d4;
+    margin: 8px;
+    background-color: rgb(221, 211, 231);
+    border: lightcyan inset 4px;
+}
+.vägledarna4{
+    grid-area: d5;
+    margin: 8px;
+    background-color: rgb(221, 211, 231);
+    border: lightcyan inset 4px;
+}
+.vägledarna5{
+    grid-area: d6;
+    margin: 8px;
+    background-color: rgb(221, 211, 231);
+    border: lightcyan inset 4px;
+}
+
+.foten{
+    grid-area: ft;
+}
+.ideerbaraatt_ha_med{
+    opacity: 0.6;
+}
+a:hover {
+    color: black;
+}
