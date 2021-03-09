@@ -1,4 +1,6 @@
+@media screen and (min-width: 850px){
 .startsida{
+margin: 0px;
 width: 100vw;
 max-width: 100%;
 overflow-x: hidden;
@@ -21,7 +23,7 @@ grid-template-areas:
 ;
 
 grid-template-columns: repeat(3, 1fr);
-grid-template-rows: 50px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+grid-template-rows: 50px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 200px;
 ;
 
 }
@@ -88,6 +90,7 @@ grid-template-rows: 50px 100px 100px 100px 100px 100px 100px 100px 100px 100px 1
     "d4 d5 d6";
     grid-template-columns: repeat(1fr,3);
     grid-template-rows: repeat(1fr,2);
+   
 }
 .vägledarinfo{
     grid-area: d1;
@@ -97,9 +100,12 @@ grid-template-rows: 50px 100px 100px 100px 100px 100px 100px 100px 100px 100px 1
     padding-right: none;
     overflow-x: hidden;
     background-color: none;
-    font-size: 40px;
+    font-size: 60px;
     font-family: Georgia;
     font-weight: 500;
+    color: rgb(221, 211, 231);;
+}
+.texten-my_services{
     color: rgb(221, 211, 231);;
 }
 .vägledarna1{
@@ -107,6 +113,10 @@ grid-template-rows: 50px 100px 100px 100px 100px 100px 100px 100px 100px 100px 1
     margin:8px;
     background-color: rgb(221, 211, 231);
     border: lightcyan inset 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
 }
 .vägledarna2{
     grid-area: d3;
@@ -135,10 +145,16 @@ grid-template-rows: 50px 100px 100px 100px 100px 100px 100px 100px 100px 100px 1
 
 .foten{
     grid-area: ft;
+    background-image: url(/img/bakground1.jpg);
+    background-repeat: no-repeat;
+    height: auto;
+    background-attachment:fixed;
+    background-position: right bottom -80px;
 }
 .ideerbaraatt_ha_med{
     opacity: 0.6;
 }
 a:hover {
     color: black;
+}
 }
