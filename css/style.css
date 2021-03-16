@@ -157,4 +157,43 @@ grid-template-rows: 50px 100px 100px 100px 100px 100px 100px 100px 100px 100px 1
 a:hover {
     color: black;
 }
+.myservicesida{
+    margin: 0px;
+width: 100vw;
+max-width: 100%;
+overflow-x: hidden;
+display: grid;
+grid-template-areas: 
+"hd hd hd"
+"a0 a0 a0"
+"a1 a1 a1"
+"a2 a2 a2"
+"a3 a3 a3"
+"a4 a4 a4"
+"a5 a5 a5"
+"ft ft ft"
+;
+
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: 50px 400px 400px 400px 400px 400px 400px 200px;
+;
+}
+.myservice{
+    grid-area: a0;
+}
+.infoservice1{
+    grid-area: a1;
+}
+.infoservice2{
+    grid-area: a2;
+}
+.infoservice3{
+    grid-area: a3;
+}
+.infoservice4{
+    grid-area: a4;
+}
+.infoservice5{
+    grid-area: a5;
+}
 }
