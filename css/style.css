@@ -292,9 +292,109 @@ grid-template-rows: 50px 400px 400px 400px 400px 400px 400px 200px;
     padding-left: 0px;
     font-size: 20px;
 }
+.about_sida{
+    margin: 0px;
+width: 100vw;
+max-width: 100%;
+overflow-x: hidden;
+display: grid;
+grid-template-areas: 
+"hd"
+"a0"
+"a6"
+"a7"
+"a8"
+"a9"
+"ft"
+;
+
+grid-template-columns:1 fr;
+grid-template-rows: 50px 400px 600px 600px 400px 400px 200px;
+;
 }
-
-
+.selfie{
+    grid-area: a6;
+    overflow: hidden;
+    background-color: rgb(238, 230, 245);
+}
+.selfien{
+   size: 10%;
+}
+.text_till_bild1{
+    grid-area: a7;
+    background-color: rgb(238, 230, 245);
+    font-size: 20px;
+    font-family: Georgia;
+    font-weight: 200;
+    align-content: space-around;
+}
+.lite_fakta{
+    margin-top: 60px;
+}
+.personnamn{
+    margin-left: 10px;
+}
+.text_till_bild2{
+    grid-area: a8;
+    padding: 30px;
+    font-size: 18px;
+    font-family: Georgia;
+    font-weight: 200;
+    background-color: rgb(221, 211, 231);
+}
+.text_till_bild3{
+    grid-area: a9;
+    padding: 30px;
+    font-size: 18px;
+    padding-top: 50px;
+    font-family: Georgia;
+    font-weight: 200;
+    background-color: rgb(221, 211, 231);
+}
+.contact_sida{
+    margin: 0px;
+    width: 100vw;
+    max-width: 100%;
+    overflow-x: hidden;
+    display: grid;
+    grid-template-areas: 
+    "hd"
+    "a0"
+    "aa"
+    "ab"
+    "ac"
+    "ft"
+    ;
+    
+    grid-template-columns: 1fr ;
+    grid-template-rows: 50px 400px 400px 400px 400px 200px;
+    ;
+}
+.contacta1{
+    grid-area: aa;
+    background-color: rgb(221, 211, 231);
+}
+.contacta2{
+    grid-area: ab;
+    background-color: rgb(238, 230, 245);
+}
+.contacta3{
+    grid-area: ac;
+    background-color: rgb(221, 211, 231);
+}
+.contac_typ{
+    font-size: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.contactas{
+    font-size: 28px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+}
 @media screen and (min-width: 850px){
 .startsida{
 margin: 0px;
@@ -563,7 +663,6 @@ grid-template-rows: 50px 400px 400px 400px 400px 400px 400px 200px;
     padding-top: 40px;
     padding-right: 40px;
     padding-left: 15px;
-    
 }
 .whatserviceinfo{
     grid-area: w2;
@@ -571,5 +670,102 @@ grid-template-rows: 50px 400px 400px 400px 400px 400px 400px 200px;
     padding-right: 15px;
     padding-left: 0px;
     font-size: 20px;
+}
+.about_sida{
+    margin: 0px;
+width: 100vw;
+max-width: 100%;
+overflow-x: hidden;
+display: grid;
+grid-template-areas: 
+"hd hd hd hd hd hd"
+"a0 a0 a0 a0 a0 a0"
+"a6 a6 a6 a6 a7 a7"
+"a8 a8 a8 a9 a9 a9 "
+"ft ft ft ft ft ft"
+;
+
+grid-template-columns: calc(100%/6) calc(100%/6) calc(100%/6) calc(100%/6) calc(100%/6) calc(100%/6);
+grid-template-rows: 50px 400px 1000px 400px 200px;
+;
+}
+.selfie{
+    grid-area: a6;
+    overflow: hidden;
+    background-color: rgb(238, 230, 245);
+}
+.selfien{
+   size: 10%;
+}
+.text_till_bild1{
+    grid-area: a7;
+    background-color: rgb(238, 230, 245);
+    font-size: 25px;
+    font-family: Georgia;
+    font-weight: 200;
+    align-content: space-around;
+}
+.lite_fakta{
+    margin-top: 60px;
+}
+.personnamn{
+    margin-left: 10px;
+}
+.text_till_bild2{
+    grid-area: a8;
+    padding: 20px;
+    font-size: 20px;
+    font-family: Georgia;
+    font-weight: 200;
+    background-color: rgb(221, 211, 231);
+}
+.text_till_bild3{
+    grid-area: a9;
+    padding: 20px;
+    font-size: 20px;
+    font-family: Georgia;
+    font-weight: 200;
+    background-color: rgb(221, 211, 231);
+}
+.contact_sida{
+    margin: 0px;
+    width: 100vw;
+    max-width: 100%;
+    overflow-x: hidden;
+    display: grid;
+    grid-template-areas: 
+    "hd hd hd"
+    "a0 a0 a0"
+    "aa ab ac"
+    "ft ft ft"
+    ;
+    
+    grid-template-columns: calc(100%/3) calc(100%/3) calc(100%/3);
+    grid-template-rows: 50px 400px 500px 200px;
+    ;
+}
+.contacta1{
+    grid-area: aa;
+    background-color: rgb(221, 211, 231);
+}
+.contacta2{
+    grid-area: ab;
+    background-color: rgb(238, 230, 245);
+}
+.contacta3{
+    grid-area: ac;
+    background-color: rgb(221, 211, 231);
+}
+.contac_typ{
+    font-size: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.contactas{
+    font-size: 28px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
 }
 }
